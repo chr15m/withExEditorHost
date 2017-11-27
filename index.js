@@ -431,4 +431,12 @@
     createDir(TMPDIR_FILES, PERM_DIR),
     createDir(TMPDIR_FILES_PB, PERM_DIR),
   ]).then(portAppStatus).catch(handleReject);
+
+  /* export */
+  module.exports = {
+    createTmpFile, getEditorConfig, getTmpFile, handleCreatedTmpFile,
+    handleExit, handleMsg, handleReject, hostMsg, initPrivateTmpDir,
+    portAppStatus, portEditorConfig, portFileData, portHostVersion,
+    readStdin, spawnChildProcess, viewLocalFile, writeStdout,
+  };
 }
